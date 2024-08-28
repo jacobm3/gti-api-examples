@@ -1,5 +1,5 @@
 # Hello
-This repo contains curl script examples for the Google Threat Intel and Mandiant Advantage Threat Intel (MATI) APIs
+This repo contains curl script examples for the Google Threat Intel, VirusTotal, and Mandiant Advantage Threat Intel (MATI) APIs.
 
 # Use
 ```
