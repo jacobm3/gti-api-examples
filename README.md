@@ -4,4 +4,5 @@ This repo contains curl script examples for the Google Threat Intel and Mandiant
 # Use
 ```
 export GTIKEY=<518cf6b....>
+./mati-login-vuln-list.sh
 ```
