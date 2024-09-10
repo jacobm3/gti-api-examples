@@ -8,6 +8,8 @@
 # Note: The "collection name" value expected in the API is not the same as shown in the UI. Use the name 
 #       shown in the search_string from the address bar.
 #
+# API reference: https://docs.mandiant.com/home/asm-api
+#
 
 # new/open issues, after 9/1, from a specific collection
 SEARCH_STR="status_new%3Aopen%20first_seen_after%3A2024-09-01%20collection%3Aseed_azureresourcegraphresults-query4_qlnhrx0"
