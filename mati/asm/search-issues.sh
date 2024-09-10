@@ -1,7 +1,9 @@
 #!/bin/bash
-
-# Easiest way to get working search strings is to search in the web UI and copy the resulting "search_string" 
-# parameter from the browser address bar.
+#
+# Retrieve ASM issues by arbitrary search parameters.
+#
+# The easiest way to get working search strings is to search in the web UI at https://asm.advantage.mandiant.com/issues
+# and copy the resulting "search_string" parameter from the browser address bar.
 #
 # For UI search parameter help, see https://docs.mandiant.com/home/asm-search-syntax
 #
