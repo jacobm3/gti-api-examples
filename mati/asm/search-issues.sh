@@ -17,7 +17,10 @@
 SEARCH_STR="status_new%3Aopen%20first_seen_after%3A2024-09-01%20collection%3Aseed_azureresourcegraphresults-query4_qlnhrx0"
 
 # all issues first seen after a specific date
-SEARCH_STR="first_seen_after%3A2024-09-09"
+SEARCH_STR="first_seen_after%3A2024-08-09"
+
+# all issues first seen after a specific date, only Confidence=Confirmed
+SEARCH_STR="first_seen_after%3A2024-08-09%20confidence%3Aconfirmed"
 
 curl -s -X GET "https://asm-api.advantage.mandiant.com/api/v1/search/issues/${SEARCH_STR}" \
   -H "Content-Type: application/x-www-form-urlencoded" \
