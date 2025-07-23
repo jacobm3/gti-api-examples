@@ -27,6 +27,7 @@ options:
   -v, --verbose         Increase output verbosity.
 ```
 
+# Logs
 Example application log:
 ```
 2025-01-22 13:36:55 - INFO - Logging system initialized.
