@@ -1,4 +1,4 @@
-load-asm-aws-integration.py configures AWS integrations in ASM.  You can configure a single integration with CLI options (-n, -a) or bulk load integrations from a CSV.
+load-asm-aws-integration.py configures AWS integrations in ASM.  You can configure a single integration with CLI options (-n, -a) or bulk load integrations from a CSV. I recommend running in verbose mode (-v). Application logs are printed to STDOUT and captured to `asm_integration.log`. 
 
 `./load-asm-aws-integration.py --help`
 
@@ -23,3 +23,19 @@ options:
   -d, --dry-run         Dry run. Only print API calls.
   -v, --verbose         Increase output verbosity.
 ```
+
+Example application log:
+```
+2025-01-22 13:36:55 - INFO - Logging system initialized.
+2025-01-22 13:52:02 - INFO - Logging system initialized.
+2025-01-22 13:52:02 - INFO - Running as: ./load-asm-aws-integration.py -p 25241 -f prod-accounts.csv -v
+2025-01-22 13:52:02 - INFO - Starting.
+2025-01-22 13:52:02 - DEBUG - Reading prod-accounts.csv
+2025-01-22 13:52:02 - DEBUG - setup_single_collection_integration(name=PROD-TEX-01, arn=arn:aws:iam::123456789:role/Mandiant-ASM-Access)
+2025-01-22 13:52:03 - DEBUG - POST https://asm-api.advantage.mandiant.com/api/v1/user_collections
+2025-01-22 13:52:03 - DEBUG - Data: {'name': 'PROD-TEX-01', 'workflow_name': 'authenticated_cloud_discovery'}
+2025-01-22 13:52:03 - DEBUG - Starting new HTTPS connection (1): asm-api.advantage.mandiant.com:443
+2025-01-22 13:52:04 - DEBUG - https://asm-api.advantage.mandiant.com:443 "POST /api/v1/user_collections HTTP/1.1" 200 None
+2025-01-22 13:52:04 - INFO - Collection created successfully!
+```
+
