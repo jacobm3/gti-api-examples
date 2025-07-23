@@ -1,5 +1,8 @@
+# Bulk Configuring AWS Integrations
 load-asm-aws-integration.py configures AWS integrations in ASM.  You can configure a single integration with CLI options (-n, -a) or bulk load integrations from a CSV. I recommend running in verbose mode (-v). Application logs are printed to STDOUT and captured to `asm_integration.log`. 
 
+
+# Usage
 `./load-asm-aws-integration.py --help`
 
 ```
