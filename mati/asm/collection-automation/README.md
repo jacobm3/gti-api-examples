@@ -28,7 +28,7 @@ options:
 ```
 
 # Logs
-Example application log:
+Capturing the execution log is important when bulk loading integrations so you can identify any failures. The script prints log messages to STDOUT and writes to asm_integration.log.  Example application log:
 ```
 2025-01-22 13:36:55 - INFO - Logging system initialized.
 2025-01-22 13:52:02 - INFO - Logging system initialized.
