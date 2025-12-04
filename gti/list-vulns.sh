@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 #
+# ref: https://gtidocs.virustotal.com/reference/list-vulnerabilities
 
 if [ -z "$GTIKEY" ]; then echo "GTIKEY is missing"; exit 1; fi
 
